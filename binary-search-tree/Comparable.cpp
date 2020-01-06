@@ -6,8 +6,7 @@ using namespace std;
 
 bool Comparable::operator==(const Comparable & c)
 {
-   return this->wordStore == c.wordStore; //double check this
-}
+   return this->wordStore == c.wordStore;
 
 bool Comparable::operator!=(const Comparable & c)
 {
@@ -24,7 +23,6 @@ bool Comparable::operator>(const Comparable & c)
    return this->wordStore > c.wordStore;
 }
 
-//istream & operator>>(istream & inputStream, Comparable & toInput)
 istream &operator>>(istream &inputStream, Comparable &toInput) {
    char c;
    string input = "";
